@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'conformitynormal';
+    src: url('confn___-webfont.woff2') format('woff2'),
+         url('confn___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body {
     padding: 0px;
     margin: 0px;
@@ -5,6 +18,7 @@ body {
 
 .left {
     width: 40vw;
+    color: whitesmoke;
 }
 
 .right {
@@ -30,7 +44,35 @@ body {
 .caption {
     position: absolute;
     bottom: 5px;
-    font-size: 16px;
-    color: whitesmoke;
+    font-size: 14px;
     width: inherit;
 }
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    width: inherit;
+    height: 20%;
+    margin: 10vh 0 0 0;
+}
+
+.overlayContainer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border: red 3px solid;
+    align-items: center;
+    min-width: min-content;
+
+.logo {
+    max-height: 80%;
+    border: blue 2px solid;
+}
+
+.name {
+    font-size: 6vh;
+    font-family: 'conformitynormal';
+    border: green 2px solid;
+}
+}
+
