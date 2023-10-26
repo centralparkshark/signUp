@@ -13,6 +13,7 @@
 body {
     padding: 0px;
     margin: 0px;
+    display: flex;
 }
 
 .left {
@@ -22,6 +23,7 @@ body {
 
 .right {
     width: 60vw;
+    color: rgba(4, 21 , 41);
 }
 
 .background {
