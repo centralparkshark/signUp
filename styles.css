@@ -1,13 +1,33 @@
 @font-face {
     font-family: 'conformitynormal';
-    src: url('confn___-webfont.woff2') format('woff2'),
-         url('confn___-webfont.woff') format('woff');
+    src: url('fonts/confn___-webfont.woff2') format('woff2'),
+         url('fonts/confn___-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('fonts/opensans-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('fonts/opensans-italic-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('fonts/opensans-italic-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'open_sansregular', Lato, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 body {
@@ -19,11 +39,6 @@ body {
 .left {
     width: 40vw;
     color: whitesmoke;
-}
-
-.right {
-    width: 60vw;
-    color: rgba(4, 21 , 41);
 }
 
 .background {
@@ -81,4 +96,49 @@ body {
     .name {
         display: none;
     }
+}
+
+.right {
+    width: 60vw;
+    color: rgba(4, 21 , 41);
+    background-color: rgb(248, 248, 248);
+}
+
+.right div {
+    padding: 10px;
+}
+
+.right p {
+    padding: 0px 4vw;
+}
+
+.middle {
+    background-color: white;
+    box-shadow: 0px 6px 6px lightgray;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4vw;
+}
+
+li {
+    color: gray;
+    padding: 16px 2vw 0 0;
+    list-style: none;
+}
+
+label {
+    font-size: .68rem;
+    display: flex;
+    margin-bottom: 4px;
+}
+
+input {
+    width: 20vw;
+}
+
+.bottom button {
+    margin: 24px 0 0 4vw;
 }
