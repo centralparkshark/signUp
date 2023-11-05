@@ -130,7 +130,7 @@ li {
 }
 
 label {
-    font-size: .68rem;
+    font-size: .76rem;
     display: flex;
     margin-bottom: 4px;
 }
@@ -139,6 +139,22 @@ input {
     width: 20vw;
 }
 
+input:invalid {
+    border: 1px dashed red;
+    background-color: rgb(255, 247, 248);
+    box-shadow: 0 0 5px 1px rgba(255, 0, 0, 0.5);
+}
+
+input:focus:invalid {
+    box-shadow: none;
+}
+
+input:focus {
+    border: 3px lightskyblue solid;
+    box-shadow: 0 0 5px rgba(195, 195, 195);
+}
+
 .bottom button {
     margin: 24px 0 0 4vw;
 }
+

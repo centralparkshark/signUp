@@ -30,16 +30,15 @@
                 <ul>
                     <li>
                         <label for="firstName">FIRST NAME</label>
-                        <input type="text" name="firstName" id="firstName"/>
+                        <input type="text" name="firstName" id="firstName" required/>
                     </li>
                     <li>    
                         <label for="lastName">LAST NAME</label>
-                        <input type="text" name="lastName" id="lastName"/>
+                        <input type="text" name="lastName" id="lastName" required/>
                     </li>
-                
                     <li>
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email"/>
+                        <input type="email" name="email" id="email" required/>
                     </li>
                     <li>
                         <label for="phone">PHONE NUMBER</label>
@@ -47,11 +46,17 @@
                     </li>
                     <li>
                         <label for="password">PASSWORD</label>
-                        <input type="text" name="password" id="password"/>
+                        <input 
+                            type="password" 
+                            name="password" 
+                            id="password" 
+                            required
+                            minlength = "8"
+                            maxlength="24"/>
                     </li>
                     <li>
                         <label for="confirm">CONFIRM PASSWORD</label>
-                        <input type="text" name="confirm" id="confirm"/>
+                        <input type="password" name="confirm" id="confirm" required/>
                     </li>
                 </ul>
             </div>
